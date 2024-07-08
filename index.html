@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Drag and Drop Image Upload</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="outerbox">
+    <h1>Upload Image Here..</h1>
+
+    <div class="container">
+
+        <div class="dropzone" id="dropZone">
+            <p>Drag & Drop or <a> click to Browse..</a></p>
+            <input type="file" id="fileInput"  multiple accept="image/png, image/jpeg/*">
+
+        </div>
+
+        <div class="file-list"  id="fileList"></div>
+ 
+    </div>
+
+    <div id="popup" class="popup">
+
+        <div class="popup-content">
+            <span class="close" id="closePopup">&times;</span>
+            <span class="save" id="savePopup">&times;</span>
+            <p>Image description saved successfully!</p>
+        </div>
+
+    </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:  50px;
+    margin: 0px;
+     background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(184,204,227,1) 100%);
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.dropzone {
+    border-radius: 15px;
+    width: 500px;
+    height: 200px;
+    border: 2px dashed lightcyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    background: rgb(208,226,231);
+    background: radial-gradient(circle, rgba(208,226,231,1) 0%, rgba(170,215,236,1) 98%);
+     input[type="file"] {
+    position: absolute;
+    opacity: 0;
+   
+  }
+}
+
+h1{
+  text-align: center;
+  color: orangered;
+  font-family: 'Montserrat', sans-serif;
+   }
+
+.dropzone p {
+    margin: 0;
+    font:
+    2rem 'Fira Sans',
+    sans-serif;
+}
+
+/* Image append Area */
+#fileList {  
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 500px;   
+}
+
+#outerbox{
+  border-radius: 25px;
+  border: 2px solid;
+  background: rgb(33,36,0);
+  background: linear-gradient(90deg, rgba(33,36,0,1) 0%, rgba(182,213,177,1) 1%, rgba(125,196,210,1) 85%);
+  padding: 25px;
+  align-items: center;
+}
+
+.image-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    position: relative;
+     border-radius: 15px;
+}
+
+.image-wrapper img {
+    width: 100px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.delete-button {
+    background-color: rgba(255, 0, 0, 0.7);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    top: 1px;
+    right: 5px;
+}
+
+.description {
+    flex-grow: 1;
+    border-radius: 10px;
+
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.popup-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
